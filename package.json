@@ -1,8 +1,14 @@
 {
   "name": "NodeBranchingModel",
   "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "start": "node app.js",
+        "test": "make test"
+    },
+
   "dependencies": {
-    "express": "3.4.0",
+    "express": "3.4.7",
     "mongoose": "3.6.x",
     "should": "1.3.x",
     "mocha": "1.13.x",

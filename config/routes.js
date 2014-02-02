@@ -10,7 +10,7 @@ var api = require('../app/controllers/api');
 module.exports = function(app) {
     var email = require('../app/util/email');
 
-    //CORS enabled
+    //CORS enabled for all third party hosts. A potential security flaw.
     /*app.all('*', function(req, res, next) {
         res.header("Access-Control-Allow-Origin", "*");
         res.header("Access-Control-Allow-Headers", "X-Requested-With");
