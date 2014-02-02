@@ -9,7 +9,7 @@ module.exports = function(jsFilename) {
     var category = require('path').basename(jsFilename);
 
     log4js.loadAppender('file');
-    log4js.addAppender(log4js.appenders.file('logs/welcomer.log'), category);
+    log4js.addAppender(log4js.appenders.file('logs/node.js.application.log'), category);
 
     //logger.info("New logger create for " + category);
 
