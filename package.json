@@ -1,12 +1,10 @@
 {
   "name": "NodeBranchingModel",
-  "version": "0.0.0",
-    "private": true,
-    "scripts": {
-        "start": "node app.js",
-        "test": "make test"
-    },
-
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "mocha"
+  },
   "dependencies": {
     "express": "3.4.7",
     "mongoose": "3.6.x",
@@ -19,9 +17,6 @@
   },
   "description": "A sample branching model for a node.js project",
   "main": "index.js",
-  "scripts": {
-    "test": "mocha"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/amirhadad/NodeBranchingModel.git"
