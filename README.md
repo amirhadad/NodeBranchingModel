@@ -1,8 +1,6 @@
 NodeBranchingModel
 ==================
 
-## Builds:
-
 branch/version | build status
 --- | ---
 develop: | [![Build Status](https://travis-ci.org/amirhadad/NodeBranchingModel.png?branch=develop)](https://travis-ci.org/amirhadad/NodeBranchingModel)
