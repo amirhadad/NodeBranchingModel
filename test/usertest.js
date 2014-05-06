@@ -3,7 +3,7 @@
  * courtesy of http://stackoverflow.com/questions/13320564/how-do-i-use-should-with-mocha-and-mongoose
  */
 
-var app = require('././app.js');
+var app = require('../config/testconfig/app.js');
 
 var localLogger = require('../config/logger.js')(__filename);
 
@@ -51,9 +51,9 @@ describe('User', function(){
                 // dont do this: if (err) throw err; - use a test
                 should.not.exist(err);
                 user.should.have.property('username', validUserData.username);
-                userTwo.username.should.equal(validUserData.username);
-                userTwo.username.should.not.equal(validUserDataTwo.username);
-                userTwo.username.should.not.equal(invalidData.username);
+                user.username.should.equal(validUserData.username);
+                user.username.should.not.equal(validUserDataTwo.username);
+                user.username.should.not.equal(invalidData.username);
                 done();
             });
         });
