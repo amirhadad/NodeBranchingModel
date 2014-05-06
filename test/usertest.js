@@ -3,7 +3,7 @@
  * courtesy of http://stackoverflow.com/questions/13320564/how-do-i-use-should-with-mocha-and-mongoose
  */
 
-var app = require('./testConfig/app.js');
+var app = require('././app.js');
 
 var localLogger = require('../config/logger.js')(__filename);
 
