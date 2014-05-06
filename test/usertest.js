@@ -29,6 +29,7 @@ var invalidData = {
 
 }
 describe('User', function(){
+    this.timeout(35000);
     beforeEach(function(done){
         // this cleans out your database before each test
         User.remove(done);
