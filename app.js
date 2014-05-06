@@ -6,6 +6,8 @@
 
 
 default_port = 8081;
+var localLogger = require('./config/logger.js')(__filename);
+
 
 var express = require('express');
 var http = require('http');
@@ -23,3 +25,19 @@ require('./config/httpsserver.js')(app);
 
 require('./config/database.js')('TempDB');
 
+
+var User = require('./app/models/users.js');
+
+var validUserData = {
+    email : 'valid.one@email.com',
+    username: 'valid.username.two',
+    password: 'valid.password.two'
+}
+user = new User
+user.newUser(validUserData.email, validUserData.username, validUserData.password,
+    function(){
+        localLogger.info('User stored!'); });
+
+User.findByEmail(validUserData.email, function(doc) {
+    localLogger.info(doc.email);
+})

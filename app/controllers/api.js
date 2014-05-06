@@ -1,7 +1,7 @@
 
 
 
-var localLogger = require('../util/logger.js')(__filename);
+var localLogger = require('../../config/logger.js')(__filename);
 
 exports.login = function (req, res) {
     localLogger.trace("user with " + req.sessionID + " is logging in");

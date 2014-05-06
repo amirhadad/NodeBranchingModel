@@ -4,6 +4,8 @@
  * Time: 5:54 PM
  */
 
+var localLogger = require('../../config/logger.js')(__filename);
+
 function sendEmail(email) {
 
     var nodemailer   = require('nodemailer');

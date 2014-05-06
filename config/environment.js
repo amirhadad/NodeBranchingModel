@@ -4,6 +4,7 @@
  * Date: 9/23/13
  * Time: 4:02 PM
  */
+var localLogger = require('./logger.js')(__filename);
 
 module.exports = function(app, express, port)
 {
@@ -23,6 +24,7 @@ module.exports = function(app, express, port)
     app.use(app.router);
     app.use(express.static(path.join(__dirname, 'public')));
 
+    localLogger.info('Environment is set for app on ports: ' + port + ' and 4443');
 // development only
     if ('development' == app.get('env')) {
         app.use(express.errorHandler());

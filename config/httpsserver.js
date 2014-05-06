@@ -4,6 +4,7 @@
  * Date: 9/23/13
  * Time: 4:07 PM
  */
+var localLogger = require('./logger.js')(__filename);
 
 module.exports = function(app){
     var fs = require('fs');
@@ -15,7 +16,7 @@ module.exports = function(app){
     https.globalAgent.maxSockets = 100000;
 
     https.createServer(credentials, app).listen(app.get('httpsport'), function(){
-        console.log('Welcomer HTTPS API server listening on port ' + app.get('httpsport'));
+        localLogger.info('Https server listening on port ' + app.get('httpsport'));
     });
 
 
