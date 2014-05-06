@@ -8,3 +8,18 @@
 [2014-05-06 19:00:11.877] [INFO] routes.js - Routes are set!
 [2014-05-06 19:00:11.890] [INFO] httpserver.js - Server created to listen on port 9999
 [2014-05-06 19:00:11.906] [INFO] database.js - Connected to 'testappdb' with Mongoose
+[2014-05-06 19:17:24.714] [INFO] environment.js - Environment is set for app on ports: 9999 and 4443
+[2014-05-06 19:17:24.849] [INFO] database.js - Database setup finished: testappdb
+[2014-05-06 19:17:24.853] [INFO] routes.js - Routes are set!
+[2014-05-06 19:17:24.865] [INFO] httpserver.js - Server created to listen on port 9999
+[2014-05-06 19:17:24.884] [INFO] database.js - Connected to 'testappdb' with Mongoose
+[2014-05-06 19:19:32.518] [INFO] environment.js - Environment is set for app on ports: 9999 and 4443
+[2014-05-06 19:19:32.650] [INFO] database.js - Database setup finished: testappdb
+[2014-05-06 19:19:32.655] [INFO] routes.js - Routes are set!
+[2014-05-06 19:19:32.669] [INFO] httpserver.js - Server created to listen on port 9999
+[2014-05-06 19:19:32.688] [INFO] database.js - Connected to 'testappdb' with Mongoose
+[2014-05-06 19:23:50.599] [INFO] environment.js - Environment is set for app on ports: 9999 and 4443
+[2014-05-06 19:23:50.734] [INFO] database.js - Database setup finished: testappdb
+[2014-05-06 19:23:50.738] [INFO] routes.js - Routes are set!
+[2014-05-06 19:23:50.751] [INFO] httpserver.js - Server created to listen on port 9999
+[2014-05-06 19:23:50.766] [INFO] database.js - Connected to 'testappdb' with Mongoose
